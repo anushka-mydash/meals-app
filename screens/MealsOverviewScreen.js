@@ -19,8 +19,15 @@ export default function MealsOverviewScreen({ route, navigation }) {
     })
   }, [categoryId, navigation])
 
+  function pressHandler({ mealId }) {
+    navigation.navigate('MealDetail', { mealId })
+  }
+
   function renderMealItem(itemData) {
-    return (<MealItem {...itemData.item} />)
+    return (<MealItem
+      {...itemData.item}
+      onPress={pressHandler}
+    />)
   }
 
   return (
