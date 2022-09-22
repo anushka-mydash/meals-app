@@ -3,7 +3,7 @@ import { useLayoutEffect, useContext } from 'react'
 
 import { MEALS } from '../data/dummy-data'
 
-import MealDetails from '../components/MealDetails'
+import MealDetails from '../components/MealDetail/MealDetails'
 import Subtitle from '../components/MealDetail/Subtitle';
 import List from '../components/MealDetail/List';
 import IconButton from '../components/IconButton'
